@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <section id="produtos">
+            <h2>Produtos</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="draggableElement" draggable="true">
+                        <article id="1">
+                            <div>
+                                <img src="https://picsum.photos/64/64?grayscale">
+                                <div>
+                                    <h4>Produto 1</h4>
+                                    <p>Descrição</p>
+                                </div>
+                            </div>
+                            <div class="valor">
+                                <input type="number" name="qtde" min="0" value="0">
+                                <input type="text" name="valor" value="2.50" disabled>
+                            </div>
+                        </article>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="draggableElement" draggable="true">
+                        <article id="2">
+                            <div>
+                                <img src="https://picsum.photos/64/64?grayscale">
+                                <div>
+                                    <h1>Produto 2</h1>
+                                    <p>Descrição</p>
+                                </div>
+                            </div>
+                            <div class="valor">
+                                <input type="number" name="qtde" min="0" value="0">
+                                <input type="text" name="valor" value="3.50" disabled>
+                            </div>
+                        </article>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="checkout">
+            <section id="carrinho">
+                <h2>Carrinho</h2>
+                <ul class="list-group">
+
+
+                    <!-- <li class="list-group-item">
+                        <div class="a">
+                            <img src="https://picsum.photos/64/64?grayscale">
+                            <div>
+                                <h1>Produto 1</h1>
+                                <p>Descrição</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div>
+                            <img src="https://picsum.photos/64/64?grayscale">
+                            <div>
+                                <h1>Produto 2</h1>
+                                <p>Descrição</p>
+                            </div>
+                        </div>
+                    </li> -->
+                </ul>
+            </section>
+            <section id="valor">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Total itens</th>
+                            <td id="total-itens">2</td>
+                        </tr>
+                        <tr>
+                            <th>Total</th>
+                            <td id="valor-total">5,00</td>
+                        </tr>
+                        </thead>
+                </table>
+            </section>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
